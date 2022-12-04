@@ -28,10 +28,47 @@ li {
 }
 
 a {
-  color: #000;
+  color: hsl(0deg, 0%, 41%);
   text-decoration: none;
 }
+a:hover {
+  color: hsl(0deg, 0%, 8%);
+}
 
+.sign {
+  margin-top: 6rem;
+}
+.sign .btn {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: hsl(0deg, 0%, 41%);
+}
+.sign .btn:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.sign .btn-secondary {
+  border: 1.5px solid hsl(0deg, 0%, 41%);
+  border-radius: 10px;
+}
+.sign .btn-secondary:hover {
+  border: 1.5px solid hsl(0deg, 0%, 8%);
+}
+
+@media screen and (min-width: 768px) {
+  .sign {
+    width: 25%;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .sign .btn {
+    margin: 0rem 1rem;
+  }
+}
 header #logo {
   margin: 2rem 0rem 0rem 2rem;
 }
@@ -57,15 +94,18 @@ header nav .navigation .close-menu {
   right: 15px;
 }
 header nav .navigation ul .nav-list {
+  margin-top: 6rem;
   font-size: 1.4rem;
 }
 header nav .navigation ul .nav-list .list {
   margin-top: 0.7rem;
+  color: hsl(0deg, 0%, 41%);
 }
 header nav .navigation ul .nav-list .list-items {
   display: none;
   margin: 0.6rem 0rem 0rem 1rem;
   font-size: 1.4rem;
+  color: hsl(0deg, 0%, 41%);
 }
 header nav .navigation ul .nav-list .list-items img {
   margin: 0.5rem 1rem 0rem 0rem;
@@ -95,7 +135,12 @@ header nav .navigation ul .nav-list .list-items img {
     margin-top: 0rem;
   }
   header nav .navigation ul .nav-list {
+    margin-top: 0rem;
+    margin-left: 4rem;
     display: flex;
     justify-content: space-between;
+  }
+  header nav .navigation ul .nav-list .list {
+    margin: 0.3rem 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */

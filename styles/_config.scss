@@ -29,6 +29,10 @@ body{
     list-style: none;
   }
   a{
-    color: #000;
+    color: $Medium-Gray;
     text-decoration: none;
+
+    &:hover{
+      color: $Almost-Black;
+    }
   }
