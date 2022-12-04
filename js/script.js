@@ -1,9 +1,9 @@
 let open = document.querySelector(".menu");
 let close = document.querySelector(".close-menu");
-let navigation = document.querySelector(".navigation");
+let navigation = document.querySelector(".navigation");i
 
 
-function openMenu(){
+openMenu = () => {
     if(open.style.display = "none"){
         navigation.style.display = "block";
     }else{
@@ -11,7 +11,7 @@ function openMenu(){
     }
 }
 
-function closeMenu(){
+closeMenu = () => {
     if(close.style.display = "block"){
         navigation.style.display = "none";
         open.style.display = "block"
@@ -22,3 +22,7 @@ function closeMenu(){
 
 open.addEventListener("click", openMenu);
 close.addEventListener("click", closeMenu);
+
+drop = () => {
+
+}
